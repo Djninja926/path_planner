@@ -1,4 +1,4 @@
-# al_planner
+# path_planner
 
 A new Flutter project.
 
