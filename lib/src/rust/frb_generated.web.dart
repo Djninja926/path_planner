@@ -192,6 +192,6 @@ class RustLibWire implements BaseWire {
 @JS('wasm_bindgen')
 external RustLibWasmModule get wasmModule;
 
-@JS()
+@JS() 
 @anonymous
 extension type RustLibWasmModule._(JSObject _) implements JSObject {}

@@ -1,5 +1,6 @@
 
 import 'package:al_planner/screens/home_screen.dart';
+import 'package:al_planner/screens/pathing_screen.dart';
 import 'package:al_planner/src/rust/frb_generated.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.orange, backgroundColor: const Color(0xfffdfdfd), cardColor: const Color(0xfff3c681)),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue, backgroundColor: const Color(0xfffdfdfd), cardColor: Colors.grey[600]),
       ),
       home: const HomeScreen(),
     );

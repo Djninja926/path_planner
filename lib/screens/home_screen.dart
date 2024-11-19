@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Directory directory = Directory("/");
   String currentJson = "";
 
-  Color buttonColor = const Color(0xffff9700);
+  Color buttonColor = const Color.fromARGB(255, 38, 0, 255);
 
   @override
   void initState() {
@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     setState(() {
-      buttonColor = const Color(0xFFFF9700);
+      buttonColor = const Color.fromARGB(255, 0, 225, 255);
     });
   }
 
@@ -134,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
               )),
           body: PlatformMenuBar(
             menus: <PlatformMenuItem>[
-              PlatformMenu(label: "AL Planner", menus: <PlatformMenuItem>[
+              PlatformMenu(label: "Path Planner", menus: <PlatformMenuItem>[
                 if (PlatformProvidedMenuItem.hasMenu(
                     PlatformProvidedMenuItemType.about))
                   const PlatformProvidedMenuItem(
@@ -196,7 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ]),
             ],
             child: _fileOptions.isEmpty
-                ? const Text("Choose File!", style: TextStyle(fontSize: 80))
+                ? const Text("Choose File, Apia!", style: TextStyle(fontSize: 80))
                 : PathingScreen(_fileOptions[_selectedIndex], (String value) {
                     currentJson = value;
                   }, true),
